@@ -2,6 +2,7 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:myapp2/routes.dart';
+import 'package:myapp2/theme.dart';
 
 Future main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -43,6 +44,7 @@ class _AppState extends State<MyApp> {
       // and also provide your routes if you are using named routes
       initialRoute: '/',
       routes: appRoutes,
+      theme: appTheme,
     );
   }
 }
